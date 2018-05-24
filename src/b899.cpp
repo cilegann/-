@@ -3,8 +3,8 @@
 using namespace std;
 class dot{
 public:
-    int x;
-    int y;
+    float x;
+    float y;
     dot(){cin>>this->x>>this->y;}
     dot(int x,int y){this->x=x;this->y=y;}
     double distance(dot d){
@@ -23,16 +23,16 @@ int main(){
         float x,y;
         x=(a.x+b.x)/2;
         y=(a.y+b.y)/2;
-        cout<<2*x-c.x+1<<" "<<2*y-c.y+1<<endl;
+        cout<<2*x-c.x<<" "<<2*y-c.y<<endl;
     }else if(ac>ab&&ac>bc){
         float x,y;
         x=(a.x+c.x)/2;
         y=(a.y+c.y)/2;
-        cout<<2*x-b.x+1<<" "<<2*y-b.y+1<<endl;
+        cout<<2*x-b.x<<" "<<2*y-b.y<<endl;
     }else{
         float x,y;
         x=(b.x+c.x)/2;
         y=(b.y+c.y)/2;
-        cout<<2*x-a.x+1<<" "<<2*y-a.y+1<<endl;
+        cout<<2*x-a.x<<" "<<2*y-a.y<<endl;
     }
 }

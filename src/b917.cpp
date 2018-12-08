@@ -8,7 +8,7 @@ void dfs(int now,long long product){
     if(now==n)  return;
     dfs(now+1,product*arr[now]);    
 }
- 
+
 int main(){
     int c=0;
     while(cin>>n){
